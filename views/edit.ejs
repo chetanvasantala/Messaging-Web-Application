@@ -1,0 +1,7 @@
+<p>edit msg : <b><%= chat._id %></b></p>
+<p>message sent from <b><%= chat.from %></b> to <b><%= chat.to %></b></p>
+<form action="/chats/<%= chat._id %>?_method=patch" method="post">
+        <textarea name="msg" id="msg" cols="50" rows="7"><%= chat.msg %></textarea>
+        <br><br>
+        <button>submit</button>
+    </form>
